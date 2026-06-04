@@ -1,8 +1,10 @@
 name: eShopOnWeb Build and Test
 
 #Triggers (uncomment line below to use it)
-on: [workflow_dispatch, issue_comment: ]
-
+on: 
+  workflow_dispatch:
+  issue_comment:
+    types: [created]
 #Environment variables https://docs.github.com/en/actions/learn-github-actions/environment-variables
 env:
   RESOURCE-GROUP: rg-eshoponweb
